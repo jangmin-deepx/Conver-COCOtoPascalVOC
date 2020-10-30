@@ -4,7 +4,7 @@ import sys
 import argparse
 
 parser = argparse.ArgumentParser(description="Convert COCO Dataset Annotation into VOC Annotation")
-parser.add_argument('--anno', type=str, default=' /mnt/datasets/COCO/official/annotations/instances_train2017.json', help="Path To COCO Annotation.json")
+parser.add_argument('--anno', type=str, default='/mnt/datasets/COCO/official/annotations/instances_train2017.json', help="Path To COCO Annotation.json")
 parser.add_argument('--out', type=str, default='./Annotations/', help="Path To COCO Annotation.json")
 
 def main():
