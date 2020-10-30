@@ -12,4 +12,4 @@ def getFileList(p,output):
         text_output.write(f'{f}\n')
 
 if __name__ == "__main__":
-    getFileList('./Annotations', './IMAGE/main/trainval.txt')
+    getFileList('./Annotations', './ImageSets/Main/trainval.txt')
