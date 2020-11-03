@@ -7,7 +7,7 @@ import shutil
 
 parser = argparse.ArgumentParser(description="Convert COCO Dataset Annotation into VOC Annotation")
 parser.add_argument('--anno', type=str, default='/mnt/datasets/COCO/official/annotations/instances_train2017.json', help="Path To COCO Annotation.json")
-parser.add_argument('--out', type=str, default='../Annotations/', help="Path To COCO Annotation.json")
+parser.add_argument('--out', type=str, default='/mnt/datasets/PascalFormCOCO2017/Annotations/', help="Path To COCO Annotation.json")
 coco_labels = list(map(lambda x: x.strip(), open('./labels_coco.txt').readlines()))
 voc_labels = list(map(lambda x: x.strip(), open('./labels_voc.txt').readlines()))
 coco_labels.insert(0, 'BACKGROUND')

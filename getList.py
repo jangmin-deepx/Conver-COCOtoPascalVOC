@@ -14,4 +14,4 @@ def clean_dataset(annos_path, outputs):
         f.write(f"{anno.split('.')[0]}\n")
 
 if __name__ == "__main__":
-    clean_dataset('../Annotations', './ImageSets/Main/trainval.txt')
+    clean_dataset('/mnt/datasets/PascalFormCOCO2017/Annotations/', '/mnt/datasets/PascalFormCOCO2017/ImageSets/Main/trainval.txt')
